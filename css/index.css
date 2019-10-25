@@ -271,13 +271,23 @@ nav {
   background-color: lightpink;
 }
 @media (max-width:500px) {
-  .btn {
-    width: 100%;
+  width: 100%;
+  .nav {
+    flex-direction: column;
+  }
+  .nav .img {
+    display: none;
   }
 }
-.nav {
-  flex-direction: column;
-}
-.nav header .img {
-  display: none;
+@media (max-width:500px) {
+  width: 100%;
+  header {
+    display: flex;
+  }
+  header .nav {
+    flex-direction: column;
+  }
+  header .nav .bus-pic {
+    display: none;
+  }
 }

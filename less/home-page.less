@@ -13,9 +13,7 @@
     .bus-pic{ 
     padding-top:5%;
     width:100%;
-
-     
-    }
+   }
   }
 }
 
@@ -98,17 +96,30 @@
   background-color:lightpink;
 }
 
-.btn{
-  @media@mobile{
-    width:100%;
-  }
-}
+
+  @media@mobile{  
+  width:100%;
   
   .nav {
     flex-direction:column;
 
-    header .img {
+  .img {
       display:none;
     }
   }
+  }
 
+  @media@mobile{  
+    width:100%;
+    header{
+      display:flex;
+    
+    .nav {
+      flex-direction:column;
+  
+    .bus-pic{
+        display:none;
+      }
+    }
+  } 
+}
