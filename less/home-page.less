@@ -2,18 +2,22 @@
   //variables
  
  header {
-   margin:15%;
-   width: 48%;
-  padding-left: 1%;
+  display:flex;
+  width: 100%;
+  padding-left: 0;
     
+  .fun {
+    width:30%;
+    padding-bottom:40%;
+  }
     .bus-pic{ 
-      display:flex;
-      width: 100%;
-      padding-left: 5%;
-     
+    padding-top:5%;
+    width:100%;
+
      
     }
   }
+}
 
   .content-section {
     margin: 30px 0;
@@ -71,7 +75,7 @@
     justify-content: space-between;
 
         @media @mobile{
-           flex-direction(column, center);
+          display:flex;
            width:100%;
            padding-right:30px;
            padding-left:30px;
@@ -87,6 +91,7 @@
  
 .btn{
   .custom-btn(black, gray);
+
 }
 
 .btn:hover{
@@ -106,4 +111,4 @@
       display:none;
     }
   }
-}
+
